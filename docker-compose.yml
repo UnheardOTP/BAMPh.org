@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  bamph-web:
+    container_name: bamph-site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8069:80"
+      - "4433:443"
+    restart: unless-stopped
