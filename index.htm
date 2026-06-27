@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAMPh, A drunken brotherhood</title>
-    <meta name="description" content="BAMPh, A drunken brotherhood. Centered around sammyl.png.">
+    <meta name="description" content="BAMPh, A drunken brotherhood.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;0,900;1,300&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;0,900;1,300&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-color: #0a0a0c;
             --text-color: #e2e8f0;
-            --accent-color: #ffb703; /* Elegant warm gold */
+            --accent-color: #ffb703;
+            /* Elegant warm gold */
             --accent-glow: rgba(255, 183, 3, 0.12);
             --transition-speed: 0.6s;
         }
@@ -26,7 +30,7 @@
 
         body {
             background-color: var(--bg-color);
-            background-image: 
+            background-image:
                 radial-gradient(circle at center, rgba(18, 18, 24, 0.8) 0%, var(--bg-color) 75%),
                 radial-gradient(circle at center, var(--accent-glow) 0%, transparent 60%);
             color: var(--text-color);
@@ -68,7 +72,7 @@
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.03);
             border-radius: 24px;
-            box-shadow: 
+            box-shadow:
                 0 30px 70px rgba(0, 0, 0, 0.8),
                 inset 0 1px 0 rgba(255, 255, 255, 0.05);
         }
@@ -127,7 +131,8 @@
             letter-spacing: 0.35em;
             color: #ffffff;
             text-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 0 4px 12px rgba(0, 0, 0, 0.9);
-            margin-right: -0.35em; /* Compensate for letter-spacing on the last character */
+            margin-right: -0.35em;
+            /* Compensate for letter-spacing on the last character */
             margin-bottom: 0.75rem;
             background: linear-gradient(135deg, #ffffff 40%, #a1a1aa 100%);
             -webkit-background-clip: text;
@@ -142,7 +147,8 @@
             color: var(--accent-color);
             letter-spacing: 0.4em;
             text-transform: uppercase;
-            margin-right: -0.4em; /* Compensate for letter-spacing */
+            margin-right: -0.4em;
+            /* Compensate for letter-spacing */
             opacity: 0.9;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             position: relative;
@@ -184,6 +190,7 @@
                 opacity: 0;
                 transform: scale(0.97) translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1) translateY(0);
@@ -195,6 +202,7 @@
                 transform: translate(-50%, -50%) scale(0.9);
                 opacity: 0.5;
             }
+
             100% {
                 transform: translate(-50%, -50%) scale(1.15);
                 opacity: 1;
@@ -211,6 +219,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Ambient gold floating orbs -->
     <div class="ambient-particle" style="width: 300px; height: 300px; top: 10%; left: -100px;"></div>
@@ -233,7 +242,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const logo = document.querySelector('.logo');
             const sound = document.getElementById('hover-sound');
-            
+
             if (logo && sound) {
                 // Play audio on mouse enter
                 logo.addEventListener('mouseenter', () => {
@@ -246,4 +255,5 @@
         });
     </script>
 </body>
+
 </html>
